@@ -1,4 +1,10 @@
 /* Slider */
+
+ .slick-tracker {
+        width: 1400px !important;
+ }
+
+
 .slick-slider
 {
     position: relative;

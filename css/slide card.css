@@ -1,27 +1,38 @@
 @charset "utf-8";
 
+
+ .work-title {
+        height: 100%;
+        font-size: 20px;
+        color: #222;
+        font-weight: 600;
+        letter-spacing: -0.4px;
+        line-height: 1.5;
+        }
+
+ .cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    padding: 40px 38px;
+    }
+
+
+ .new_img .logo {
+        width: 100%;
+        height: 100%;
+        align-self: flex-end;
+    }
+
+
 .container_slide a{
     text-decoration: none;
     color: #000;
 }
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+
 }
 body{ font-family: 'Noto Sans KR', 'sans-serif'; 
 	position: relative; 
@@ -59,6 +70,89 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+
+.btn-3 {
+        justify-content: center;
+    }
+
+    .btn {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        background: transparent;
+    }
+
+    .btn span {
+        position: relative;
+        text-transform: uppercase;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        line-height: 40px;
+        display: inline-block;
+        transition: 0.3s;
+        background: white;
+    }
+
+    .btn .second-btn-txt {
+        background: var(--pink-color);
+    }
+
+    .btn-3 {
+        padding: 5px;
+    }
+
+    .btn-3::before,
+    .btn-3::after {
+        background: transparent;
+        z-index: 2;
+        position: absolute;
+        content: "";
+    }
+
+ 
+    .btn.hover-border-1::before,
+    .btn.hover-border-1::after {
+        width: 0%;
+        height: 0%;
+        /* transition: 0.35s; */
+        transition: width 0.2s 0.15s linear, height 0.15s linear, opacity 0s 0.35s;
+        /* transition: width 0.2s(duration) 0.15s(delay) */
+        opacity: 0;
+        position: absolute;
+        content: "";
+    }
+
+    .btn.hover-border-1::before {
+        top: 0px;
+        left: 0px;
+        border-left: 1px solid white;
+        border-top: 1px solid white;
+        position: absolute;
+        content: "";
+    }
+
+    .btn.hover-border-1::after {
+        bottom: 0;
+        right: 0;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        position: absolute;
+        content: "";
+    }
+
+    .btn.hover-border-1:hover::before,
+    .btn.hover-border-1:hover::after {
+        width: 99%;
+        height: 98%;
+        transition: width 0.2s linear, height 0.15s 0.2s linear, opacity 0s;
+        opacity: 1;
+        position: absolute;
+        content: "";
+    }
+
 
 /* 보도자료 */
 .news_wrap{width: 100%; padding: 80px 0; background-color: #f8f8f8;}

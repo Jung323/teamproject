@@ -14,7 +14,7 @@
   height: 830px;
   z-index: 9999;
   position: relative; z-index: 1;
-  background: url("../image/헤더배경.png") no-repeat;
+  background: url("../image/headerbg.png") no-repeat;
   background-repeat: round;
   padding-top: 30px;
 } 

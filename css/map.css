@@ -9,6 +9,8 @@
     width: 60%;
     height: 45vw;
     max-width: 1400px;
+    margin-left: 25px;
+    margin-bottom: 45px;
     position:relative;
     overflow:hidden; 
     background: url("http://t1.daumcdn.net/mapjsapi/images/2x/bg_tile.png"); 
@@ -17,7 +19,7 @@
 .map-wrap{
     margin: 200px;
     display: flex;
-    gap: 75px;
+    gap: 77px;
     }
 
 .map-wrap .map-info-wrap{
@@ -25,7 +27,8 @@
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    margin-top: 65px;
+    margin-top: 67px;
+    margin-left: 15px;
     visibility:visible;
 }
 
@@ -37,16 +40,13 @@
 }
 
 .map-wrap .map-info-wrap .map-info-p{
-    
+    color: #7b7b7b;
     font-weight: 549;
     font-size: 18px;
     line-height: 25px;
-    color: #7b7b7b;
     padding-bottom: 20px;
     text-align: left;
-    
 }
-
 
 
 @media screen and (max-width: 1300px){
@@ -54,28 +54,25 @@
     gap: 50px;
     margin: 200px 20px;}
     .indexKakaoMap{
-        height: 650px;
+        height: 600px;
     }
     .map-wrap .map-info-wrap{
-        width: 40%;
+        width: 45%;
     }
 }
 
 @media screen and (max-width:1217px){
     .indexKakaoMap{
-        height: 650px;
+        height: 600px;
     }
     
 }
-
 
 @media screen and (max-width:1140px){
     .map-wrap .map-info-wrap{
         width: 40%;
     }    
 }
-
-
 
 @media screen and (max-width: 940px){
     .map-wrap{
@@ -88,17 +85,15 @@
     .map-wrap .map-info-wrap .map-info-p{
         font-size: 17px;
         line-height: 25px;
-        }
+    }
     
 }
-
 
 @media screen and (max-width: 640px){
     .map-wrap{
     flex-direction: column-reverse;
-    margin: 0;
-    margin-bottom: 300px;
     align-items: center;
+    margin: 0 0 300px;
     }
     .map-wrap .map-info-wrap{
     flex-wrap: wrap;
@@ -109,7 +104,6 @@
     }
     .map-wrap .map-info-wrap .map-info{
     width: 50%;
-    margin-bottom: 50px;
     }
 
     .map-wrap .map-info-wrap .map-info-p{
@@ -125,6 +119,6 @@
     }
     .map-wrap .map-info-wrap .map-info{
     width: 100%;
-    margin-bottom:20px;
+    margin-bottom:30px;
     }
 }
